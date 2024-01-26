@@ -18,9 +18,12 @@ Program working in 2 modes
 
 ## Usage
 To use tag search mode just type your tag then select service and change rating (optional) and type number of pages and start(offset) page.  
+Then select output folder.  
+
 ![preview](/imgs/img1.png)
 
 To use most viewed mode just select service and rating (optional) and type number of pages and start(offset) page.  
+Then select output folder.  
 
 ![preview](/imgs/img2.png)
 
