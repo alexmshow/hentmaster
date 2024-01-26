@@ -17,10 +17,10 @@ Program working in 2 modes
 3. lolibooru
 
 ## Usage
-### To use tag search mode just type your tag then select service and change rating (optional) and type number of pages and start(offset) page
+##### To use tag search mode just type your tag then select service and change rating (optional) and type number of pages and start(offset) page
 ![preview](/imgs/img1.png)
 ===
-### To use most viewed mode just select service and rating (optional) and type number of pages and start(offset) page
+##### To use most viewed mode just select service and rating (optional) and type number of pages and start(offset) page
 ![preview](/imgs/img2.png)
 
 ## Build to executable file
