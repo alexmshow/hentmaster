@@ -14,11 +14,6 @@ lolibooru_URI_post = "https://lolibooru.moe/post.json?page={page}&tags={tag}&lim
 
 rule34_URI_post = "https://api.rule34.xxx/index.php?page=dapi&s=post&q=index&limit=100&pid={page}&tags={tag}&json=1"
 
-headers = {
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0"
-}
-
 class Service:
     def __init__(self, service_name, folder) -> None:
         self.service_name = service_name
