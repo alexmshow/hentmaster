@@ -234,18 +234,11 @@ class Ui_MainWindow(object):
         self.Pages.setEnabled(False)
         self.Tag.setEnabled(False)
         self.Browse.setEnabled(False)
+        self.AkiraKagami.setEnabled(False)
         self.KometaStartButton.setEnabled(False)
 
-        worker = downloader.Worker(downloader.main, service, rating, tag, pages, start_page, folder, most_viewed, self.comm.progressSignal)
+        worker = downloader.Worker(downloader.main, service, rating, tag, pages, start_page, folder, most_viewed, self.comm.progressSignal, self)
         self.threadpool.start(worker)
-
-        self.Service.setEnabled(True)
-        self.Rating.setEnabled(True)
-        self.StratPages.setEnabled(True)
-        self.Pages.setEnabled(True)
-        self.Tag.setEnabled(True)
-        self.Browse.setEnabled(True)
-        self.KometaStartButton.setEnabled(True)
     
     def updateBar(self, percent):
         self.progressBar.setValue(percent)

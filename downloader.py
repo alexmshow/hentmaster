@@ -161,7 +161,7 @@ def getPage(url):
     r = requests.get(url)
     return r.json()
 
-def main(service, rating, tag, pages, start_page, folder, most_viewed, signal):
+def main(service, rating, tag, pages, start_page, folder, most_viewed, signal, cls):
     match service:
         case "Danbooru":
             serv = Danbooru(rating, tag, pages, start_page, folder, most_viewed)
@@ -194,6 +194,15 @@ def main(service, rating, tag, pages, start_page, folder, most_viewed, signal):
     signal.emit(100)
     time.sleep(2.2)
     signal.emit(0)
+
+    cls.Service.setEnabled(True)
+    cls.Rating.setEnabled(True)
+    cls.StratPages.setEnabled(True)
+    cls.Pages.setEnabled(True)
+    cls.Tag.setEnabled(True)
+    cls.Browse.setEnabled(True)
+    cls.AkiraKagami.setEnabled(True)
+    cls.KometaStartButton.setEnabled(True)
 
     executor.shutdown()
 
